@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
 :root {
     --padding-container: 100px 0;
     --color-title: #001A49;
@@ -17,7 +22,7 @@ body {
     padding: var(--padding-container);
 }
 
-.hero {
+.hero, #hero{
     width: 100%;
     height: 100vh;
     min-height: 600px;
@@ -28,7 +33,7 @@ body {
     color: #fff;
 }
 
-.hero::before {
+.hero::before, #hero {
     content: "";
     position: absolute;
     top: 0;
@@ -472,6 +477,7 @@ body {
 
 .footer__copyright{
     font-weight: 300;
+    text-size-adjust: 12px;
 }
 
 .footer__icons{
@@ -481,6 +487,73 @@ body {
 .footer__img{
     width: 30px;
 }
+
+/* estilo pagina logueo  */
+.form-register {
+    width: 400px;
+    background: #818a8e6f;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+  }
+  
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    width: 100%;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #ffffff;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: rgb(104, 104, 104);
+  }
+  
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    background: #e7e7e7;
+    border-radius: 10px;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+  #centered {
+    display: flex;
+    justify-content: center;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+  
 
 /* Media queries */
 
